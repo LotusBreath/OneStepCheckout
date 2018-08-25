@@ -1,0 +1,24 @@
+<config>
+    <modules>
+        <Commmercers_InvoiceEmail>
+            <version>1.0.0.0</version>
+        </Commmercers_InvoiceEmail>
+    </modules>
+    <global>
+        <models>
+            <commercers_invoiceemail>
+                <class>Commercers_InvoiceEmail_Model</class>
+            </commercers_invoiceemail>
+        </models>
+        <events>
+            <sales_order_save_after>
+                <observers>
+                    <commercers_invoiceemail_automatically_send>
+                        <class>commercers_invoiceemail/observer</class>
+                        <method>sendInvoiceEmail</method>
+                    </commercers_invoiceemail_automatically_send>
+                </observers>
+            </sales_order_save_after>
+        </events>
+    </global>
+</config>
