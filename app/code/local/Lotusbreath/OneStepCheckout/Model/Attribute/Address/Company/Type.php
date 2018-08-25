@@ -1,0 +1,5 @@
+<?php
+class class Lotusbreath_TwoStepsCheckout_Model_Attribute_Address_Company_Type extends Mage_Eav_Model_Entity_Attribute_Source_Abstract
+{
+
+}
