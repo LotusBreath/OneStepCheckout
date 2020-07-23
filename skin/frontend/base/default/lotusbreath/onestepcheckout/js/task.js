@@ -48,7 +48,8 @@
                     relative_parts : ['review_block'],
                     completed_observers : ['afterUpdatePaymentMethod']
                 }
-            }
+            },
+            activityUrl : '/onestepcheckout/index/save'
         },
         _create: function () {
             this._super();
